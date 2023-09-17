@@ -30,8 +30,5 @@ BehaviorCall é uma plataforma inovadora para conectar psicólogos e pacientes a
    - Android Emulator
 3. Execute `npm run start` e seja feliz :)!!!
 
-## Contribuindo
-
-Estamos sempre abertos a contribuições e melhorias. Se você deseja contribuir para o desenvolvimento do VideoChamaTerapia, siga estas etapas:
 
 
