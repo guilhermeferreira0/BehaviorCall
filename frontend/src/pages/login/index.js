@@ -6,9 +6,9 @@ import styles from './style';
 function Login() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Entrar</Text>
+      <Animatable.Text animation='fadeInRight' delay={500} style={styles.title}>Entrar</Animatable.Text>
 
-      <Animatable.View animation='fadeInUp' style={styles.form}>
+      <Animatable.View animation='fadeInLeft' delay={200} style={styles.form}>
 
         <Text style={styles.formText}>Nome De Usuário: </Text>
         <TextInput
