@@ -1,22 +1,26 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
-import Header from './src/components/header';
+import { StatusBar } from 'react-native';
+import { useFonts } from 'expo-font';
+
+import { NavigationContainer } from '@react-navigation/native';
+import Routes from './src/routes';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Header />
+  const [fontsLoaded] = useFonts({
+    'Oswald': require('./assets/fonts/Oswald-VariableFont_wght.ttf'),
+  });
 
-      <StatusBar style="auto" />
-    </View>
+  if (!fontsLoaded) {
+    return null;
+  }
+
+  return (
+    <NavigationContainer>
+      <StatusBar
+        backgroundColor='#3DB1D4'
+        barStyle='light-content'
+      />
+      <Routes />
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    paddingTop: 20,
-  },
-});
