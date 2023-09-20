@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Home from '../pages/home';
+import Initial from '../pages/initial';
 import Login from '../pages/login';
+import Home from '../pages/home';
 
 const Stack = createNativeStackNavigator();
 
@@ -10,8 +11,8 @@ function Routes() {
   return (
     <Stack.Navigator>
       <Stack.Screen
-        name="Home"
-        component={Home}
+        name="Initial"
+        component={Initial}
         options={{headerShown: false}}
       />
 
@@ -20,6 +21,14 @@ function Routes() {
         component={Login}
         options={{headerShown: false}}
       />
+
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{headerShown: false}}
+      />
+
+
 
     </Stack.Navigator>
   );
