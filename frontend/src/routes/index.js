@@ -8,6 +8,7 @@ import Home from '../pages/home';
 const Stack = createNativeStackNavigator();
 
 function Routes() {
+
   return (
     <Stack.Navigator>
       <Stack.Screen
@@ -27,8 +28,6 @@ function Routes() {
         component={Home}
         options={{headerShown: false}}
       />
-
-
 
     </Stack.Navigator>
   );

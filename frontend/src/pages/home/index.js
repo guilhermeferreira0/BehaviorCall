@@ -2,8 +2,11 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
-import { AntDesign, MaterialCommunityIcons } from '@expo/vector-icons';
+
+import { AntDesign, MaterialCommunityIcons  } from '@expo/vector-icons';
 import styles from './style';
+
+import Bars from '../../components/bars';
 
 function Home() {
   const navigation = useNavigation();
@@ -11,9 +14,8 @@ function Home() {
 
   return(
     <Animatable.View style={styles.container} animation='slideInDown'>
-      <TouchableOpacity style={styles.bars}>
-        <AntDesign name="bars" size={24} color="black" />
-      </TouchableOpacity>
+
+      <Bars />
 
       <View style={styles.firstContainer}>
         <Image style={styles.circleImg}/>
@@ -22,7 +24,6 @@ function Home() {
           <Text style={styles.firstContainerLevel}>Lvl. {level}</Text>
         </View>
       </View>
-
 
       <TouchableOpacity
         style={styles.nextSection}
