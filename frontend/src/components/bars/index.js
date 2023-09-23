@@ -6,7 +6,6 @@ import { Octicons, EvilIcons, AntDesign, Feather   } from '@expo/vector-icons';
 import styles from './style';
 
 function Bars() {
-
   const  [ visible, setVisible ] = useState(false);
 
   return(

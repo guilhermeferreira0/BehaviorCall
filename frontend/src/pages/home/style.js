@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#3DB1D4',
     padding: 20,
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
 
   firstContainer: {
