@@ -33,11 +33,15 @@ function Home() {
       </TouchableOpacity>
 
       <View style={styles.nav}>
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Chat')}
+        >
           <MaterialCommunityIcons name="message-text-outline" size={30} color="black" />
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Home')}
+        >
           <AntDesign name="home" size={30} color="black" />
         </TouchableOpacity>
 

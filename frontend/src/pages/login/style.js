@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -8,7 +7,6 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#FFFFFF',
-    fontFamily: 'Oswald',
     fontSize: 22,
     fontWeight: '700',
     lineHeight: 32,

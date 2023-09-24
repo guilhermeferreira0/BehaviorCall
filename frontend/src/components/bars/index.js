@@ -43,7 +43,10 @@ function Bars() {
                     <Text style={styles.textDel}>Excluir</Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity style={styles.flexDireRow}>
+                  <TouchableOpacity
+                    style={styles.flexDireRow}
+                    onPress={() => <Edit />}
+                  >
                     <Feather name="edit" size={24} color="black" />
                     <Text style={styles.textEdit}>Editar</Text>
                   </TouchableOpacity>
