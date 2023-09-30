@@ -3,10 +3,9 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
 
-import { AntDesign, MaterialCommunityIcons  } from '@expo/vector-icons';
-
 import styles from './style';
 import Bars from '../../components/bars';
+import Tabs from '../../components/tabs';
 
 function Home() {
   const navigation = useNavigation();
@@ -27,32 +26,12 @@ function Home() {
 
       <TouchableOpacity
         style={styles.nextSection}
-        onPress={() => navigation.navigate('Chat')}
+        onPress={() => navigation.navigate('Contact')}
       >
         <Text style={styles.nextSectionText}>Proxima Sessão</Text>
       </TouchableOpacity>
 
-      <View style={styles.nav}>
-        <TouchableOpacity
-          onPress={() => navigation.navigate('Chat')}
-        >
-          <MaterialCommunityIcons name="message-text-outline" size={30} color="black" />
-        </TouchableOpacity>
-
-        <TouchableOpacity
-          onPress={() => navigation.navigate('Home')}
-        >
-          <AntDesign name="home" size={30} color="black" />
-        </TouchableOpacity>
-
-        <TouchableOpacity>
-          <MaterialCommunityIcons name="bell-ring-outline" size={30} color="black" />
-        </TouchableOpacity>
-
-        <TouchableOpacity>
-          <MaterialCommunityIcons name="calendar-month-outline" size={30} color="black" />
-        </TouchableOpacity>
-      </View>
+      <Tabs />
 
     </Animatable.View>
   );

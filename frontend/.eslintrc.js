@@ -37,6 +37,9 @@ module.exports = {
     'no-use-before-define': 0,
     'import/no-extraneous-dependencies': 0,
     'global-require': 0,
-    'react/no-unstable-nested-components': true,
+    'react/no-unstable-nested-components': 0,
+    'react/destructuring-assignment': 0,
+    'react/require-default-props': 0,
+    'react/jsx-boolean-value': 0,
     },
 };

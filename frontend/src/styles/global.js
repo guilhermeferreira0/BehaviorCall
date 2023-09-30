@@ -1,11 +1,10 @@
-import { StyleSheet } from 'react-native';
-import Oswald from './fonts';
+import { createGlobalStyle } from 'styled-components/native';
 
-const GlobalStyle = StyleSheet.create({
-  body: {
-    fontFamily: Oswald,
+// eslint-disable-next-line import/prefer-default-export
+export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+  body {
+    font-family: 'Oswald', sans-serif;
   }
-})
-
-
-export default GlobalStyle;
+`;

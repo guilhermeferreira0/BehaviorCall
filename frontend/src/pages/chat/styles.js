@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   nav: {
-    width: '100%',
     height: 80,
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -29,9 +28,23 @@ const styles = StyleSheet.create({
     marginLeft: 100,
   },
 
-  content: {
+  section: {
     flex: 1,
     backgroundColor: '#3DB1D4',
+    padding: 20,
+  },
+
+  messages: {
+    flex: 1,
+  },
+
+  input: {
+    flex: 1,
+    backgroundColor: '#FFFFFF',
+    width: 280,
+    borderRadius: 20,
+    paddingLeft: 15,
+    marginRight: 10,
   }
 });
 

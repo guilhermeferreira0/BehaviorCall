@@ -50,11 +50,6 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     color: '#184654',
   },
-
-  nav: {
-    flexDirection: 'row',
-    justifyContent: 'space-evenly'
-  }
 });
 
 export default styles;
