@@ -23,12 +23,11 @@ const styles = StyleSheet.create({
     width: 150,
   },
 
-  buttonAccessText: {
+  buttonAccessTxt: {
     color: '#FFFFFF',
-    fontWeight: 'bold',
-    fontSize: 20,
-  }
-
+    fontSize: 22,
+    fontFamily: 'Oswald-SemiBold'
+  },
 });
 
 export default styles;

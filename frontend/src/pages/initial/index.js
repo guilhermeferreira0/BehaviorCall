@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
+
 import styles from './style';
 
 function Home() {
@@ -21,7 +22,7 @@ function Home() {
         style={styles.buttonAccess}
         onPress={() => navigation.navigate('SignIn')}
       >
-        <Text style={styles.buttonAccessText}>Acessar</Text>
+        <Text style={styles.buttonAccessTxt}>Acessar</Text>
       </TouchableOpacity>
 
     </View>

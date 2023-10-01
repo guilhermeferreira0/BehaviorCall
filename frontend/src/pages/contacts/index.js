@@ -31,7 +31,7 @@ function Contacts() {
               paramKey: item.nome
             }) }
           >
-            <Text>{item.nome}</Text>
+            <Text style={{fontFamily: 'Oswald-Medium'}}>{item.nome}</Text>
           </TouchableOpacity>
         }
         />

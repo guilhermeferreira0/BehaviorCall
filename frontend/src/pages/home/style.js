@@ -24,10 +24,10 @@ const styles = StyleSheet.create({
   },
 
   firstContainerTitle: {
-    fontWeight: '700',
     marginBottom: 5,
     fontSize: 16,
-    color: '#FFF'
+    color: '#FFF',
+    fontFamily: 'Oswald-Medium'
   },
 
   firstContainerLevel: {
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
 
   nextSectionText: {
-    fontWeight: '700',
+    fontFamily: 'Oswald-Bold',
     fontSize: 22,
     textTransform: 'uppercase',
     color: '#184654',

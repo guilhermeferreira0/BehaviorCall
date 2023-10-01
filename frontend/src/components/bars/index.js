@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { Modal, Text, TouchableOpacity, View, SafeAreaView } from 'react-native';
+import { Modal, Text, TouchableOpacity, View, SafeAreaView, Alert } from 'react-native';
 import * as Animatable from 'react-native-animatable';
-import { Octicons, EvilIcons, AntDesign, Feather   } from '@expo/vector-icons';
+import { Octicons, EvilIcons, AntDesign} from '@expo/vector-icons';
 
+import Edit from '../edit';
 import styles from './style';
 
 function Bars() {
@@ -38,19 +39,24 @@ function Bars() {
 
                 <View style={styles.buttons}>
 
-                  <TouchableOpacity style={styles.flexDireRow}>
+                  <TouchableOpacity
+                    style={styles.flexDireRow}
+                    onPress={() => {
+                      Alert.alert('Excluir Usuario', 'Tem certeza que deseja excluir?', [
+                        {
+                          text: 'Cancelar',
+                          onPress: () => console.log('Cancel Pressed'),
+                          style: 'cancel',
+                        },
+                        {text: 'Excluir', onPress: () => console.log('OK Pressed')},
+                      ]);
+                    }}
+                  >
                     <AntDesign name="delete" size={24} color="red" />
                     <Text style={styles.textDel}>Excluir</Text>
                   </TouchableOpacity>
 
-                  <TouchableOpacity
-                    style={styles.flexDireRow}
-                    onPress={() => <Edit />}
-                  >
-                    <Feather name="edit" size={24} color="black" />
-                    <Text style={styles.textEdit}>Editar</Text>
-                  </TouchableOpacity>
-
+                  <Edit />
                 </View>
 
                 <TouchableOpacity style={styles.flexDireRow}>
@@ -67,8 +73,7 @@ function Bars() {
 
         {visible ?
         <View
-        style={styles.overlay}>
-        </View>
+        style={styles.overlay} />
         : null}
       </SafeAreaView>
     </>

@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   title: {
     color: '#FFFFFF',
     fontSize: 22,
-    fontWeight: '700',
+    fontFamily: 'Oswald-Bold',
     lineHeight: 32,
     textTransform: "uppercase",
     textAlign: 'center',

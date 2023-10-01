@@ -7,8 +7,8 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#FFFFFF',
-    fontSize: 22,
-    fontWeight: '700',
+    fontSize: 28,
+    fontFamily: 'Oswald-Bold',
     lineHeight: 32,
     textTransform: "uppercase",
     textAlign: 'center',
@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
   formText: {
     fontSize: 16,
     color: '#FFFFFF',
-    fontWeight: '400',
+    fontFamily: 'Oswald-Medium',
     lineHeight: 23,
     marginTop: 7,
     marginBottom: 7,
@@ -63,12 +63,14 @@ const styles = StyleSheet.create({
 
   buttonAccessText: {
     color: '#FFFFFF',
-    fontWeight: '600',
+    fontSize: 15,
+    fontFamily: 'Oswald-SemiBold',
   },
 
   buttonRegisterText: {
     color: '#FFFFFF',
-    fontWeight: '600',
+    fontSize: 15,
+    fontFamily: 'Oswald-SemiBold',
   },
 
 })

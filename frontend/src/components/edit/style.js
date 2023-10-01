@@ -18,48 +18,27 @@ const styles = StyleSheet.create({
     height: 'auto'
   },
 
-  buttons: {
-    flexDirection: 'row',
-    marginTop: 25,
-    marginBottom: 450,
-    gap: 25
+  form: {
+    flex: 1,
+    width: 150,
   },
 
-  flexDireRow: {
-    flexDirection: 'row',
-  },
-
-  textUser: {
+  inputText: {
     marginTop: 20,
-    fontWeight: '700',
-    fontSize: 22,
-    textTransform: 'uppercase',
-    color: '#FFFFFF'
-  },
-
-  textDescription: {
-    fontSize: 14,
-    fontWeight: '300',
-    color: '#FFFFFF'
-  },
-
-  textDel: {
-    color: '#EE0000',
-    fontWeight: '600',
-    marginLeft: 8,
-  },
-
-  textEdit: {
     color: '#FFFFFF',
-    fontWeight: '600',
-    marginLeft: 8,
+    fontSize: 16,
+    fontFamily: 'Oswald-Regular',
   },
 
-  textSettings: {
-    color: '#FFFFFF',
-    fontWeight: '600',
-    marginLeft: 8,
-  },
+  input: {
+    marginTop: 8,
+    borderColor: '#FFFFFF',
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    paddingVertical: 3,
+  }
 
 })
 

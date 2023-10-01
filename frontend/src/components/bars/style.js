@@ -21,17 +21,19 @@ const styles = StyleSheet.create({
   buttons: {
     flexDirection: 'row',
     marginTop: 25,
-    marginBottom: 450,
-    gap: 25
+    marginBottom: 430,
+    gap: 12
   },
 
   flexDireRow: {
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 
   textUser: {
     marginTop: 20,
-    fontWeight: '700',
+    fontFamily: 'Oswald-Bold',
     fontSize: 22,
     textTransform: 'uppercase',
     color: '#FFFFFF'
@@ -39,25 +41,20 @@ const styles = StyleSheet.create({
 
   textDescription: {
     fontSize: 14,
-    fontWeight: '300',
+    fontFamily: 'Oswald-Regular',
     color: '#FFFFFF'
   },
 
   textDel: {
     color: '#EE0000',
-    fontWeight: '600',
-    marginLeft: 8,
-  },
-
-  textEdit: {
-    color: '#FFFFFF',
-    fontWeight: '600',
+    fontFamily: 'Oswald-SemiBold',
     marginLeft: 8,
   },
 
   textSettings: {
     color: '#FFFFFF',
-    fontWeight: '600',
+    fontSize: 16,
+    fontFamily: 'Oswald-Medium',
     marginLeft: 8,
   },
 
