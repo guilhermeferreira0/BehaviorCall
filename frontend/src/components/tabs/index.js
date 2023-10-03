@@ -26,7 +26,9 @@ function Tabs() {
           <MaterialCommunityIcons name="bell-ring-outline" size={30} color="black" />
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Schedule')}
+        >
           <MaterialCommunityIcons name="calendar-month-outline" size={30} color="black" />
         </TouchableOpacity>
       </View>

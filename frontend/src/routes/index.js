@@ -6,6 +6,7 @@ import Login from '../pages/login';
 import Home from '../pages/home';
 import Contact from '../pages/contacts';
 import Chat from '../pages/chat';
+import Schedule from '../pages/schedule';
 
 const Stack = createNativeStackNavigator();
 
@@ -39,6 +40,12 @@ function Routes() {
       <Stack.Screen
         name="Chat"
         component={Chat}
+        options={{headerShown: false}}
+      />
+
+      <Stack.Screen
+        name="Schedule"
+        component={Schedule}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
