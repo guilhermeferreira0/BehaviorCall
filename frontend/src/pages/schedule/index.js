@@ -35,27 +35,36 @@ function Schedule() {
     <View style={styles.container}>
       <Bars />
 
-      <TouchableOpacity
-        onPress={() => {
-          setType('start')
-          setOpenCalendar(true)
-        }}
-      >
-        <Text>Selecione a data inicial: </Text>
-      </TouchableOpacity>
+      <Text style={styles.title}>Calendário</Text>
 
-      <Text>{Moment(initialDate).format('dddd, MMMM Do YYYY')}</Text>
+      <View style={styles.section}>
+        <TouchableOpacity
+          style={styles.btnSelected}
+          onPress={() => {
+            setType('start')
+            setOpenCalendar(true)
+          }}
+        >
+          <Text style={{fontSize: 16, fontFamily: 'Oswald-Bold'}}>Selecione a data inicial: </Text>
+        </TouchableOpacity>
 
-      <TouchableOpacity
-        onPress={() => {
-          setType('end')
-          setOpenCalendar(true)
-        }}
-      >
-        <Text>Selecione a data final: </Text>
-      </TouchableOpacity>
+        <Text style={styles.daySelected}>{Moment(initialDate).format('dddd, MMMM Do YYYY')}</Text>
 
-      <Text>{Moment(endDate).format('dddd, MMMM Do YYYY')}</Text>
+      </View>
+
+      <View style={styles.section}>
+        <TouchableOpacity
+          style={styles.btnSelected}
+          onPress={() => {
+            setType('end')
+            setOpenCalendar(true)
+          }}
+        >
+          <Text style={{fontSize: 16, fontFamily: 'Oswald-Bold'}}>Selecione a data final: </Text>
+        </TouchableOpacity>
+
+        <Text style={styles.daySelected}>{Moment(endDate).format('dddd, MMMM Do YYYY')}</Text>
+      </View>
 
       <Modal visible={openCalendar}>
         <CalendarPicker
@@ -72,8 +81,9 @@ function Schedule() {
         />
       </Modal>
 
-
-      <Tabs />
+      <View style={styles.tabs}>
+        <Tabs />
+      </View>
     </View>
 
   );

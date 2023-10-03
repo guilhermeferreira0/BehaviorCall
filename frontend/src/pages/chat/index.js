@@ -71,7 +71,7 @@ function Chat({ route }) {
 }
 
 Chat.propTypes = {
-  route: PropTypes.string
+  route: PropTypes.object
 };
 
 

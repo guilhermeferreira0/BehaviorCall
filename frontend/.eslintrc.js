@@ -41,5 +41,6 @@ module.exports = {
     'react/destructuring-assignment': 0,
     'react/require-default-props': 0,
     'react/jsx-boolean-value': 0,
+    'react/forbid-prop-types': 0,
     },
 };

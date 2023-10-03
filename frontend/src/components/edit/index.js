@@ -12,19 +12,22 @@ function Edit() {
 
   const pickImage = async () => {
     // No permissions request is necessary for launching the image library
-    const result = await ImagePicker.launchImageLibraryAsync({
-      mediaTypes: ImagePicker.MediaTypeOptions.All,
-      allowsEditing: true,
-      aspect: [4, 3],
-      quality: 1,
-    });
+    try {
+      const result = await ImagePicker.launchImageLibraryAsync({
+        mediaTypes: ImagePicker.MediaTypeOptions.All,
+        allowsEditing: true,
+        aspect: [4, 3],
+        quality: 1,
+      });
 
-    // eslint-disable-next-line
-    console.log(result);
-
-    if (!result.canceled) {
-      setImage(result.assets[0].uri);
+      if (!result.canceled) {
+        setImage(result?.assets[0].uri);
+      }
+    } catch(e) {
+      // eslint-disable-next-line
+      console.log('Chave Cancelada: ', e)
     }
+
   };
 
   return(
