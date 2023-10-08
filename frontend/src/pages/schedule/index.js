@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { View, TouchableOpacity, Text, Modal } from 'react-native';
 import Moment from 'moment';
+import * as Notify from 'expo-notifications';
 import CalendarPicker from 'react-native-calendar-picker';
 import styles from './styles';
 
@@ -29,6 +30,20 @@ function Schedule() {
     else {
       setEndDate(day);
     }
+  }
+
+  async function handleCallNotification() {
+
+    await Notify.scheduleNotificationAsync({
+      content: {
+        title: 'BehaviorCall',
+        body: 'Bem vindo ao App :)',
+        data: {},
+      },
+      trigger: {
+        seconds: 3,
+      }
+    });
   }
 
   return(
@@ -64,6 +79,17 @@ function Schedule() {
         </TouchableOpacity>
 
         <Text style={styles.daySelected}>{Moment(endDate).format('dddd, MMMM Do YYYY')}</Text>
+      </View>
+
+      <View style={styles.section}>
+      <TouchableOpacity
+          style={styles.notification}
+          // eslint-disable-next-line
+          onPress={handleCallNotification}
+        >
+          <Text style={{fontSize: 16, fontFamily: 'Oswald-Bold'}}>Notificações</Text>
+        </TouchableOpacity>
+
       </View>
 
       <Modal visible={openCalendar}>

@@ -5,16 +5,15 @@ import { useNavigation } from '@react-navigation/native';
 import styles from './style';
 
 function Login() {
-
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <Animatable.Text animation='fadeInRight' delay={500} style={styles.title}>Entrar</Animatable.Text>
+      <Animatable.Text animation='fadeInRight' delay={500} style={styles.title}>Registrar</Animatable.Text>
 
       <Animatable.View animation='fadeInLeft' delay={200} style={styles.form}>
 
-        <Text style={styles.formText}>Nome De Usuário: </Text>
+        <Text style={styles.formText}>Usuário: </Text>
         <TextInput
           style={styles.input}
           placeholder='username: '
@@ -26,16 +25,15 @@ function Login() {
           placeholder='password: '
         />
 
+        <Text style={styles.formText}>E-Mail: </Text>
+        <TextInput
+          style={styles.input}
+          placeholder='password: '
+        />
+
         <Animatable.View style={styles.containerButtons}>
-
-          <TouchableOpacity style={[styles.buttonAccess, styles.button]}
-          onPress={() => navigation.navigate('Home')}
-          >
-          <Text style={styles.buttonAccessText}>Entrar</Text>
-          </TouchableOpacity>
-
           <TouchableOpacity style={styles.button}
-            onPress={() => navigation.navigate('Register')}
+            onPress={() => navigation.navigate('Home')}
           >
             <Text style={styles.buttonRegisterText}>Cadastrar</Text>
           </TouchableOpacity>

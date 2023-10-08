@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-import { AntDesign, MaterialCommunityIcons  } from '@expo/vector-icons';
+import { AntDesign, MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 import styles from './styles';
 
 function Tabs() {
@@ -22,8 +22,10 @@ function Tabs() {
           <AntDesign name="home" size={30} color="black" />
         </TouchableOpacity>
 
-        <TouchableOpacity>
-          <MaterialCommunityIcons name="bell-ring-outline" size={30} color="black" />
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Search')}
+        >
+          <Ionicons name="search" size={29} color="black" />
         </TouchableOpacity>
 
         <TouchableOpacity

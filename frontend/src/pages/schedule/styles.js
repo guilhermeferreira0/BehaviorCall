@@ -23,7 +23,8 @@ const styles = StyleSheet.create({
     margin: 5,
     borderRadius: 6,
     marginBottom: 5,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    alignItems: 'center',
   },
 
   btnSelected: {
@@ -47,6 +48,18 @@ const styles = StyleSheet.create({
   tabs: {
     flex: 1,
     justifyContent: 'flex-end'
+  },
+
+  notification: {
+    flexShrink: 1,
+    padding: 10,
+    borderRadius: 10,
+    backgroundColor: '#2F86A1',
+    marginRight: 10,
+    borderColor: '#365FE0',
+    borderStyle: 'solid',
+    borderWidth: 2,
+    fontSize: 20,
   }
 })
 
