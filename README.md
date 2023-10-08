@@ -18,6 +18,7 @@ BehaviorCall é uma plataforma inovadora para conectar psicólogos e pacientes a
 
 - Node >= 12 (https://nodejs.org/dist/latest-v12.x/)
 - NPM >= 5.6.0
+- Expo >= 49.0.11
 - Android Studio - SDK API 28 (https://developer.android.com/studio)
 - Git (https://git-scm.com/downloads)
 
